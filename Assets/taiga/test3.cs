@@ -6,7 +6,8 @@ public class test3 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        int taiga;
+
 	}
 	
 	// Update is called once per frame
