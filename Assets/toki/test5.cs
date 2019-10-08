@@ -6,6 +6,7 @@ public class test5 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        int god;
 		
 	}
 	
