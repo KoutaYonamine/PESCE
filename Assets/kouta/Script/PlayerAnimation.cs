@@ -28,13 +28,13 @@ public class PlayerAnimation : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             transform.localScale = defalutScale;
-            GetComponent<Animator>().SetTrigger("OnceAttack");
+            GetComponent<Animator>().SetTrigger("OnceAttack1");
         }
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             // ローカルスケールのXの値を反転させることで、スプライトを反転させる
             transform.localScale = new Vector3(-defalutScale.x, defalutScale.y, defalutScale.z);
-            GetComponent<Animator>().SetTrigger("OnceAttack");
+            GetComponent<Animator>().SetTrigger("OnceAttack1");
         }
     }
 
