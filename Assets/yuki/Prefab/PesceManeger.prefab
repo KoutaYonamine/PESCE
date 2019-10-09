@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1711480959284982}
+  m_IsPrefabParent: 1
+--- !u!1 &1711480959284982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4860497612363286}
+  - component: {fileID: 114719457657400462}
+  m_Layer: 0
+  m_Name: PesceManeger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4860497612363286
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1711480959284982}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114719457657400462
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1711480959284982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7cd2c5afef8ceb44a45abb4a5b78811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PesceObj:
+  - {fileID: 1135631122139612, guid: 11751d0d2fac68f41bebff2dc8bef3e7, type: 2}
+  - {fileID: 1961809693569570, guid: 45fe223f10c2c6c4fbb7c1d471c5fa53, type: 2}
+  - {fileID: 1135631122139612, guid: 1f2233c16a0561b4f8fe7e60db6cc7bc, type: 2}
+  - {fileID: 1961809693569570, guid: e4d606fec46b4b1489a5edaea753d00d, type: 2}
+  - {fileID: 1009255885806682, guid: 6d4692459e67abf46b9b77197044efdd, type: 2}
+  InstantiatePos:
+  - {x: -9, y: -6}
+  - {x: -9.5, y: -4.5}
+  - {x: 9, y: -6}
+  - {x: 9.5, y: -4.5}
+  - {x: -12, y: 0.5}
+  PesceCount: 140000000a000000140000000a00000001000000

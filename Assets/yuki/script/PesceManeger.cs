@@ -25,7 +25,7 @@ public class PesceManeger : MonoBehaviour {
 
         LimitCount += Time.deltaTime;
         InstantiateTime();
-        Debug.Log(LimitCount);
+        //Debug.Log(LimitCount);
     }
 
     void InstantiatePesce(int i)
