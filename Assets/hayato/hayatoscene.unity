@@ -152,6 +152,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1191510444130244, guid: 335aa94357e383c49bd1ddef18a6fb82, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 335aa94357e383c49bd1ddef18a6fb82, type: 2}
   m_IsPrefabParent: 0
@@ -275,6 +279,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1746368235935112, guid: 4f98c3605dc94804eb56a4a41da60aa3, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114291906015609486, guid: 4f98c3605dc94804eb56a4a41da60aa3,
+        type: 2}
+      propertyPath: SlashdFishPrefab
+      value: 
+      objectReference: {fileID: 1532719934739166, guid: 052dff5e2f844b64f8e83b83a91edd63,
+        type: 2}
+    - target: {fileID: 212999383256730894, guid: 4f98c3605dc94804eb56a4a41da60aa3,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f98c3605dc94804eb56a4a41da60aa3, type: 2}
   m_IsPrefabParent: 0
@@ -317,6 +336,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1701696690002582, guid: 1cf17c3f634b96a4ba0389367af4685b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1cf17c3f634b96a4ba0389367af4685b, type: 2}
   m_IsPrefabParent: 0
@@ -358,6 +381,10 @@ Prefab:
     - target: {fileID: 4878488054021700, guid: 86db011c8d6fc6c43a1df6d6aa2e56f5, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1888566846822980, guid: 86db011c8d6fc6c43a1df6d6aa2e56f5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 86db011c8d6fc6c43a1df6d6aa2e56f5, type: 2}
@@ -462,6 +489,21 @@ Prefab:
     - target: {fileID: 4255951428470716, guid: a4ccf2b9d567a974aa3fe118c6ccfa1e, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1336260172308986, guid: a4ccf2b9d567a974aa3fe118c6ccfa1e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114358651415246532, guid: a4ccf2b9d567a974aa3fe118c6ccfa1e,
+        type: 2}
+      propertyPath: SlashdFishPrefab
+      value: 
+      objectReference: {fileID: 1054221030375048, guid: 65c68f74776311a47ac6597f3d34f889,
+        type: 2}
+    - target: {fileID: 212726286926513138, guid: a4ccf2b9d567a974aa3fe118c6ccfa1e,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4ccf2b9d567a974aa3fe118c6ccfa1e, type: 2}
@@ -604,6 +646,21 @@ Prefab:
     - target: {fileID: 4514815692464072, guid: bec1f78e268771541b9863959932ac4f, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1244354296693376, guid: bec1f78e268771541b9863959932ac4f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114084151092872668, guid: bec1f78e268771541b9863959932ac4f,
+        type: 2}
+      propertyPath: SlashdFishPrefab
+      value: 
+      objectReference: {fileID: 1396972842352964, guid: 2b125adb9e4b6d149b28f98b19273c1c,
+        type: 2}
+    - target: {fileID: 212719163174415598, guid: bec1f78e268771541b9863959932ac4f,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bec1f78e268771541b9863959932ac4f, type: 2}
