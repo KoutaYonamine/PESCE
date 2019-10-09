@@ -10,6 +10,8 @@ public class UpHitBox : MonoBehaviour {
     GameObject pointObj;
     PointPlusMethod pointscript;
 
+    public GameObject SlashdFishPrefab;
+
     void Start()
     {
         baseObj = GameObject.Find("CoolTimeManager");
@@ -24,6 +26,8 @@ public class UpHitBox : MonoBehaviour {
         {
             script.SetWaitTime();
             pointscript.PointPlus(2);
+            Destroy(collider.gameObject);
+            Instantiate(SlashdFishPrefab);
             Debug.Log("↑上への攻撃でたまんを捌いたゾ");
         }
         Debug.Log("上に魚がふれている");
