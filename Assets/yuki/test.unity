@@ -226,6 +226,7 @@ MonoBehaviour:
   - {x: 9, y: -6}
   - {x: 9.5, y: -4.5}
   - {x: -12, y: 0.5}
+  PesceCount: 140000000a000000140000000a00000001000000
 --- !u!4 &1027431242
 Transform:
   m_ObjectHideFlags: 0
