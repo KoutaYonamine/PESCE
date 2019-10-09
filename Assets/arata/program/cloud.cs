@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class cloud : MonoBehaviour {
 
-    float X = 6,Y=3;//オブジェクト初期位置
-    float goal = -8; //雲の最終位置
+    float X = 10,Y=3;//オブジェクト初期位置
+    float goal = -13; //雲の最終位置
     Transform tb;
     Vector2 pos;
 	
