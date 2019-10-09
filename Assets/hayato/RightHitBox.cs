@@ -10,6 +10,8 @@ public class RightHitBox : MonoBehaviour {
     GameObject pointObj;
     PointPlusMethod pointscript;
 
+    public GameObject SlashdFishPrefab;
+
     void Start()
     {
         baseObj = GameObject.Find("CoolTimeManager");
@@ -24,6 +26,8 @@ public class RightHitBox : MonoBehaviour {
         {
             script.SetWaitTime();
             pointscript.PointPlus(0);
+            Destroy(collider.gameObject);
+            Instantiate(SlashdFishPrefab);
             Debug.Log("→右への攻撃でぐるくんを捌いたゾ");
         }
         Debug.Log("右に魚がふれている");
