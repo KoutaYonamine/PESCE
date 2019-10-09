@@ -32,17 +32,10 @@ public class TitleController : MonoBehaviour {
 	void Update () {
         if(State <= 0)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                alpha = 1;
-                State = 1;
-                StartButton.gameObject.SetActive(true);
-            }
-
            
             GetComponent<SpriteRenderer>().color = new Color(red, green, blue, alpha);
             alpha += Fadespeed;
-            if (1 <= alpha)
+            if (1 <= alpha || Input.GetKeyDown(KeyCode.Space))
             {
                 alpha = 1;
                 State = 1;
@@ -61,7 +54,6 @@ public class TitleController : MonoBehaviour {
 
         else if (State == 2)
         {
-            Debug.Log(alpha);
             
             GetComponent<SpriteRenderer>().color = new Color(red, green, blue, alpha);
             alpha -= Fadespeed;
