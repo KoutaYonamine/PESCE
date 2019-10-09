@@ -10,6 +10,8 @@ public class LeftHitBox : MonoBehaviour {
     GameObject pointObj;
     PointPlusMethod pointscript;
 
+    public GameObject SlashdFishPrefab;
+
     void Start () {
 		baseObj = GameObject.Find("CoolTimeManager");
         script = baseObj.GetComponent<CoolTimeManager>();
@@ -25,11 +27,15 @@ public class LeftHitBox : MonoBehaviour {
             {
                 script.SetWaitTime();
                 pointscript.PointPlus(0);
+                Destroy(collider.gameObject);
                 Debug.Log("←左への攻撃でぐるくんを捌いたゾ");
+                Instantiate(SlashdFishPrefab);
             } else if (collider.gameObject.tag == "Pesce")
             {
                 script.SetWaitTime();
                 pointscript.PointPlus(1);
+                Destroy(collider.gameObject);
+                Instantiate(SlashdFishPrefab);
                 Debug.Log("←左への攻撃でトビウオを捌いたゾ");
             }
         }
