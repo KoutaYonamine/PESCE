@@ -20,7 +20,7 @@ public class UpHitBox : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Fish" && AttackUp() == true)
+        if (collider.gameObject.tag == "Peste" && AttackUp() == true)
         {
             script.SetWaitTime();
             pointscript.PointPlus(2);
