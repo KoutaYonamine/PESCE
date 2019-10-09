@@ -6,7 +6,9 @@ public class PesceManeger : MonoBehaviour {
 
     float Count = 0;
     float LimitCount = 0;
-    float Frequency = 1.5f;
+    float Frequency = 1.3f;
+
+    bool LastFlg = true;
 
     public GameObject[] PesceObj;
     public Vector2[] InstantiatePos;
@@ -19,11 +21,12 @@ public class PesceManeger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log(LimitCount);
+       // Debug.Log(LimitCount);
 
         LimitCount += Time.deltaTime;
         InstantiateTime();
-	}
+        Debug.Log(LimitCount);
+    }
 
     void InstantiatePesce(int i)
     {
@@ -36,6 +39,8 @@ public class PesceManeger : MonoBehaviour {
         {
             for(int j=0; PesceObj.Length-1 > j;)
             {
+                //Debug.Log(PesceObj.Length - 1);
+                //Debug.Log(j);
                 if(PesceCount[j] > 0)
                 {
                     Instantiate(PesceObj[j], InstantiatePos[j], Quaternion.identity);
@@ -46,6 +51,11 @@ public class PesceManeger : MonoBehaviour {
                 {
                     j++;
                 }
+                else
+                {
+                    PesceCount[PesceObj.Length - 1] = 1;
+                    break;
+                }
             }
         }
     }
@@ -54,19 +64,24 @@ public class PesceManeger : MonoBehaviour {
     {
         Count += Time.deltaTime;
         //Debug.Log(Count);
-
         if(Count > Frequency)
         {
             int i;
-
+            Debug.Log("!!!!!");
             if(LimitCount > 0 && LimitCount <= 10)
             {
                 i = Random.Range(0, 4);
                 InstantiatePesce(i);
             }
-            else if(LimitCount > 10 && LimitCount <= 35)
+            else if(LimitCount > 10 && LimitCount <= 20)
             {
-                Frequency = 1.2f;
+                Frequency = 1.1f;
+                i = Random.Range(0, 5);
+                InstantiatePesce(i);
+            }
+            else if(LimitCount > 20 && LimitCount <= 35)
+            {
+                Frequency = 1.0f;
                 i = Random.Range(0, 5);
                 InstantiatePesce(i);
             }
@@ -76,11 +91,16 @@ public class PesceManeger : MonoBehaviour {
                 i = Random.Range(0, 5);
                 InstantiatePesce(i);
             }
-            if(LimitCount > 59&&LimitCount <= 60)
+            if(LimitCount > 59f && LastFlg == true)
             {
+                
                 Instantiate(PesceObj[4], InstantiatePos[4], Quaternion.identity);
+                LastFlg = false;
             }
-
+            else
+            {
+                Count = 0;
+            }
         }
     }
 }
