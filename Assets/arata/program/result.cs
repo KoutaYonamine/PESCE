@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class result : MonoBehaviour {
     float X = 0, Y = -11;//オブジェクト初期位置
     float goalX = 0, goalY = 0; //リザルトの最終位置
@@ -9,6 +10,9 @@ public class result : MonoBehaviour {
     Vector2 pos;
     int score = 0;
     int ResultRanku;
+    bool soundflag=true;
+    bool voiceflag = true;
+   
    
 
     private GameObject pointObj;
@@ -51,17 +55,46 @@ public class result : MonoBehaviour {
         switch (ResultRanku)
         {
             case 1:
-                this.ranku[0].SetActive(true);
-
+                if (soundflag)
+                {
+                    this.ranku[0].SetActive(true);
+                    soundflag = false;
+                    spika.PlayOneShot(sound[0]);
+                    StartCoroutine( Voice(3f, ResultRanku));
+                }
                 break;
             case 2:
-                this.ranku[1].SetActive(true);
+                if (soundflag)
+                {
+                    this.ranku[0].SetActive(true);
+                    soundflag = false;
+                    spika.PlayOneShot(sound[0]);
+                    StartCoroutine(Voice(3f, 2));
+                }
                 break;
             case 3:
-                this.ranku[2].SetActive(true);
+                if (soundflag)
+                {
+                    this.ranku[0].SetActive(true);
+                    soundflag = false;
+                    spika.PlayOneShot(sound[0]);
+                    StartCoroutine(Voice(3f, 3));
+                }
                 break;
             case 4:
-                this.ranku[3].SetActive(true);
+                if (soundflag)
+                {
+                    this.ranku[0].SetActive(true);
+                    soundflag = false;
+                    spika.PlayOneShot(sound[0]);
+                    //StartCoroutine(Voice(3f, 4));
+                }
+                if (voiceflag)
+                {
+                    this.ranku[0].SetActive(true);
+                    voiceflag = false;
+                    spika.PlayOneShot(sound[4]);
+                }
                 break;
 
 
@@ -78,6 +111,11 @@ public class result : MonoBehaviour {
             ResultRanku = 3;
         else if (score >= 9000)
             ResultRanku = 4;
+    }
+    IEnumerator Voice(float time, int i)
+    {
+        yield return new WaitForSeconds(time);
+        spika.PlayOneShot(sound[i]);
     }
 }
 
