@@ -9,56 +9,55 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1080151619020318}
+  m_RootGameObject: {fileID: 1047368513794098}
   m_IsPrefabParent: 1
---- !u!1 &1080151619020318
+--- !u!1 &1047368513794098
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4264164877458100}
-  - component: {fileID: 212479550888882410}
-  - component: {fileID: 114295681182945372}
+  - component: {fileID: 4240784814056734}
+  - component: {fileID: 212550340393752186}
+  - component: {fileID: 114451661036842368}
   m_Layer: 0
-  m_Name: TrailLeft
+  m_Name: UpTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4264164877458100
+--- !u!4 &4240784814056734
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1080151619020318}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: -0.5, z: 0}
-  m_LocalScale: {x: -3, y: -3, z: 1}
+  m_GameObject: {fileID: 1047368513794098}
+  m_LocalRotation: {x: 0, y: 0, z: 0.91920406, w: 0.39378163}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114295681182945372
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 133.62}
+--- !u!114 &114451661036842368
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1080151619020318}
+  m_GameObject: {fileID: 1047368513794098}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d925079683ef874982704959b1006ac, type: 3}
+  m_Script: {fileID: 11500000, guid: ba75580687a2830499cda9f66ad46668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lefttrail: {fileID: 0}
---- !u!212 &212479550888882410
+--- !u!212 &212550340393752186
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1080151619020318}
+  m_GameObject: {fileID: 1047368513794098}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -87,9 +86,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: e2342d900389e604fbc1133489238756, type: 3}
-  m_Color: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

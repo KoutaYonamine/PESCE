@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TobiuoMove : MonoBehaviour {
+public class AlarmTobiuoMove : MonoBehaviour {
     Transform Mytransform;
     Vector2 pos;
+
     [SerializeField] float Speed;
 
     float time = 0;
@@ -23,7 +24,7 @@ public class TobiuoMove : MonoBehaviour {
 
     private void Move()
     {
-        pos.x += Speed;
+        pos.x -= Speed;
         Mytransform.position = pos;
     }
 
