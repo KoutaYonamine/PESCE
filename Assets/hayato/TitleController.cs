@@ -35,7 +35,7 @@ public class TitleController : MonoBehaviour {
            
             GetComponent<SpriteRenderer>().color = new Color(red, green, blue, alpha);
             alpha += Fadespeed;
-            if (1 <= alpha || Input.GetKeyDown(KeyCode.Space))
+            if (1 <= alpha || Input.GetKeyDown(KeyCode.UpArrow))
             {
                 alpha = 1;
                 State = 1;
@@ -45,7 +45,7 @@ public class TitleController : MonoBehaviour {
 
         }else if (State == 1)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 State = 2;
                 StartButton.gameObject.SetActive(false);
