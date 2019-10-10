@@ -29,7 +29,7 @@ public class result : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        //score = 5000;
+        score = 0;
         tb = this.gameObject.transform;
         pos = tb.position;
 
@@ -67,7 +67,7 @@ public class result : MonoBehaviour {
             case 2:
                 if (soundflag)
                 {
-                    this.ranku[0].SetActive(true);
+                    this.ranku[1].SetActive(true);
                     soundflag = false;
                     spika.PlayOneShot(sound[0]);
                     StartCoroutine(Voice(3f, 2));
@@ -76,7 +76,7 @@ public class result : MonoBehaviour {
             case 3:
                 if (soundflag)
                 {
-                    this.ranku[0].SetActive(true);
+                    this.ranku[2].SetActive(true);
                     soundflag = false;
                     spika.PlayOneShot(sound[0]);
                     StartCoroutine(Voice(3f, 3));
@@ -85,14 +85,14 @@ public class result : MonoBehaviour {
             case 4:
                 if (soundflag)
                 {
-                    this.ranku[0].SetActive(true);
+                    this.ranku[3].SetActive(true);
                     soundflag = false;
                     spika.PlayOneShot(sound[0]);
                     //StartCoroutine(Voice(3f, 4));
                 }
                 if (voiceflag)
                 {
-                    this.ranku[0].SetActive(true);
+                    this.ranku[4].SetActive(true);
                     voiceflag = false;
                     spika.PlayOneShot(sound[4]);
                 }
@@ -101,21 +101,34 @@ public class result : MonoBehaviour {
                
 
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.UpArrow)&&pos.x>=goalX&&pos.y>=goalY)
         {
             SceneManager.LoadScene("MasterScenes");
+            Debug.Log("おっぱい！！！！");
         }
     }
     void rankuwake()
     {
         if (score <= 6999)
+        {
             ResultRanku = 1;
+            Debug.Log("1");
+        }
         else if (score <= 7999)
+        {
             ResultRanku = 2;
+            Debug.Log("2");
+        }
         else if (score <= 8999)
+        {
             ResultRanku = 3;
+            Debug.Log("3");
+        }
         else if (score >= 9000)
+        {
             ResultRanku = 4;
+            Debug.Log("4");
+        }
     }
     IEnumerator Voice(float time, int i)
     {
