@@ -31,12 +31,16 @@ public class LeftHitBox : MonoBehaviour {
 
     AudioSource audioSource;
 
+    
+
     void Start () {
 		baseObj = GameObject.Find("CoolTimeManager");
         script = baseObj.GetComponent<CoolTimeManager>();
         pointObj = GameObject.Find("PointManager");
         pointscript = pointObj.GetComponent<PointPlusMethod>();
         audioSource = gameObject.GetComponent<AudioSource>();
+
+        
     }
 
     private void OnTriggerStay2D(Collider2D collider)
@@ -92,6 +96,9 @@ public class LeftHitBox : MonoBehaviour {
             Debug.Log("左へ攻撃した");
             script.SetWaitTime();
             audioSource.PlayOneShot(SlashSound);
+
+            
+
             return true;
         }
         return false;

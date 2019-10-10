@@ -109,22 +109,22 @@ public class result : MonoBehaviour {
     }
     void rankuwake()
     {
-        if (score <= 6999)
+        if (score <= 5999)
         {
             ResultRanku = 1;
             Debug.Log("1");
         }
-        else if (score <= 7999)
+        else if (score <= 6999)
         {
             ResultRanku = 2;
             Debug.Log("2");
         }
-        else if (score <= 8999)
+        else if (score <= 7999)
         {
             ResultRanku = 3;
             Debug.Log("3");
         }
-        else if (score >= 9000)
+        else if (score >= 8000)
         {
             ResultRanku = 4;
             Debug.Log("4");
