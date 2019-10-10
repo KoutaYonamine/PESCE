@@ -55,6 +55,7 @@ public class LeftHitBox : MonoBehaviour {
         {
             Debug.Log("左へ攻撃した");
             script.SetWaitTime();
+
             return true;
         }
         return false;
