@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class result : MonoBehaviour {
@@ -97,8 +98,12 @@ public class result : MonoBehaviour {
                 }
                 break;
 
+               
 
-
+        }
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            SceneManager.LoadScene("MasterScenes");
         }
     }
     void rankuwake()
