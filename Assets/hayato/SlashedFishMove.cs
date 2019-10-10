@@ -11,7 +11,7 @@ public class SlashedFishMove : MonoBehaviour {
     // Use this for initialization
     void Start () {
         rb2d = GetComponent<Rigidbody2D>();
-        rb2d.AddForce(new Vector2(100, 350));
+        rb2d.AddForce(new Vector2(XForce, YForce));
     }
 	
 	// Update is called once per frame

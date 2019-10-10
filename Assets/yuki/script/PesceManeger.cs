@@ -10,6 +10,7 @@ public class PesceManeger : MonoBehaviour {
 
     bool LastFlg = true;
 
+    public GameObject AlarmTobiuo;
     public GameObject[] PesceObj;
     public Vector2[] InstantiatePos;
 
@@ -32,6 +33,11 @@ public class PesceManeger : MonoBehaviour {
     {
         if (PesceCount[i] > 0)
         {
+            if(PesceObj[i] == PesceObj[4])
+            {
+                Instantiate(AlarmTobiuo, new Vector2(11, 3.5f), Quaternion.identity);
+            }
+
             Instantiate(PesceObj[i], InstantiatePos[i], Quaternion.identity);
             PesceCount[i]--;
             Count = 0;
@@ -95,6 +101,7 @@ public class PesceManeger : MonoBehaviour {
             {
                 
                 Instantiate(PesceObj[4], InstantiatePos[4], Quaternion.identity);
+                Instantiate(AlarmTobiuo, new Vector2(11, 3.5f), Quaternion.identity);
                 LastFlg = false;
             }
             else
