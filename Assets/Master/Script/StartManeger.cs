@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StartManeger : MonoBehaviour {
     public GameObject PesceManeger;
+    public GameObject Text;
     // Use this for initialization
     void Start () {
 		
@@ -13,7 +14,8 @@ public class StartManeger : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            
+            PesceManeger.SetActive(true);
+            Text.SetActive(true);
         }
     }
 }
