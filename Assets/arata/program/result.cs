@@ -9,12 +9,14 @@ public class result : MonoBehaviour {
     Vector2 pos;
     int score = 0;
     int ResultRanku;
+   
 
     private GameObject pointObj;
     PointPlusMethod pointScript;
 
     public GameObject[] ranku;
-
+    public AudioClip[] sound;
+    public AudioSource spika;
 
  [SerializeField]float speed;
 
@@ -50,6 +52,7 @@ public class result : MonoBehaviour {
         {
             case 1:
                 this.ranku[0].SetActive(true);
+
                 break;
             case 2:
                 this.ranku[1].SetActive(true);
