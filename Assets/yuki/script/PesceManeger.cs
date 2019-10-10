@@ -35,7 +35,7 @@ public class PesceManeger : MonoBehaviour {
         {
             if(PesceObj[i] == PesceObj[4])
             {
-                Instantiate(AlarmTobiuo, new Vector2(11, 3.5f), Quaternion.identity);
+                Instantiate(AlarmTobiuo, new Vector2(11, 0f), Quaternion.identity);
             }
 
             Instantiate(PesceObj[i], InstantiatePos[i], Quaternion.identity);
