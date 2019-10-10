@@ -12,7 +12,7 @@ public class result : MonoBehaviour {
     int score = 0;
     int ResultRanku;
     bool soundflag=true;
-    bool voiceflag = true;
+    //bool voiceflag = true;
    
    
 
@@ -29,7 +29,7 @@ public class result : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        score = 0;
+        //score = 8000;
         tb = this.gameObject.transform;
         pos = tb.position;
 
@@ -88,14 +88,15 @@ public class result : MonoBehaviour {
                     this.ranku[3].SetActive(true);
                     soundflag = false;
                     spika.PlayOneShot(sound[0]);
+                    spika.PlayOneShot(sound[4]);
                     //StartCoroutine(Voice(3f, 4));
                 }
-                if (voiceflag)
-                {
-                    this.ranku[4].SetActive(true);
-                    voiceflag = false;
-                    spika.PlayOneShot(sound[4]);
-                }
+                //if (voiceflag)
+                //{
+                //    //this.ranku[4].SetActive(true);
+                //    voiceflag = false;
+                //    spika.PlayOneShot(sound[4]);
+                //}
                 break;
 
                

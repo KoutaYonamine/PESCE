@@ -6,6 +6,7 @@ public class Timer : MonoBehaviour
 {
     public float countTime = 60;
     public GameObject Result;
+    AudioSource audioSource;
 
     // Use this for initialization
     void Start()
@@ -21,6 +22,8 @@ public class Timer : MonoBehaviour
         if(countTime <= 0)
         {
             Instantiate(Result);
+            audioSource = this.GetComponent<AudioSource>();
+            audioSource.Stop();
             Destroy(gameObject);
         }
     }

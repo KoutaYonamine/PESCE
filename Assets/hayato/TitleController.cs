@@ -10,6 +10,9 @@ public class TitleController : MonoBehaviour {
     public float slideSpeed = 0.05f;  // 横にずれるアニメーションの速度
     public GameObject StartButton;
 
+    public GameObject PesceManeger;
+    public GameObject Text;
+
     private float Fade;
     private int State;
     private float red, green, blue, alpha;    //RGBを操作するための変数
@@ -63,6 +66,8 @@ public class TitleController : MonoBehaviour {
                 alpha = 0;
                 State = 3;
                 GetComponent<SpriteRenderer>().color = new Color(red, green, blue, alpha);
+                PesceManeger.SetActive(true);
+                Text.SetActive(true);
             }
         }
 	}

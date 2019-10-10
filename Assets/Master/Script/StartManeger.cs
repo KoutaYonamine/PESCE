@@ -12,10 +12,10 @@ public class StartManeger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            PesceManeger.SetActive(true);
-            Text.SetActive(true);
-        }
+        //if (Input.GetKeyDown(KeyCode.UpArrow))
+        //{
+        //    PesceManeger.SetActive(true);
+        //    Text.SetActive(true);
+        //}
     }
 }
