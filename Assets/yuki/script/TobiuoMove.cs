@@ -5,6 +5,7 @@ using UnityEngine;
 public class TobiuoMove : MonoBehaviour {
     Transform Mytransform;
     Vector2 pos;
+    [SerializeField] float Speed;
 
     float time = 0;
     // Use this for initialization
@@ -22,7 +23,7 @@ public class TobiuoMove : MonoBehaviour {
 
     private void Move()
     {
-        pos.x += 0.9f;
+        pos.x += Speed;
         Mytransform.position = pos;
     }
 

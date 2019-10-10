@@ -7,7 +7,7 @@ public class result : MonoBehaviour {
     float goalX = 0, goalY = 0; //リザルトの最終位置
     Transform tb;
     Vector2 pos;
-    int score = 8000;
+    int score = 0;
     int ResultRanku;
 
     private GameObject pointObj;
